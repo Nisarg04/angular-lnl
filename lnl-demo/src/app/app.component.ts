@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lnl-demo';
+  flag=false;
+  textOnClick="Default Text!!";
+  textName="";
+
+  constructor() {
+    setTimeout(() => {
+      this.flag=true;
+    }, 2000);
+  }
+
+  onClickAction() {
+    this.textOnClick="Updated Text!!"
+  }
+
 }
